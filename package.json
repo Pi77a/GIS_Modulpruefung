@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@types/mongodb": "^3.6.20",
+    "@types/node": "^16.3.1",
+    "mongodb": "^3.6.10"
+  },
+  "name": "modulpruefung",
+  "description": "Modulprüfung Grundlagen Interaktiver System 2021",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./Modulprüfung/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pi77a/GIS_Modulpruefung.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pi77a/GIS_Modulpruefung/issues"
+  },
+  "homepage": "https://github.com/Pi77a/GIS_Modulpruefung#readme"
+}

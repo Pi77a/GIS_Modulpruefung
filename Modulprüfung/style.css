@@ -1,0 +1,86 @@
+body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(179, 179, 179);
+    margin:0px;
+}
+header {
+    height: 100px;
+    background-color: rgb(179, 179, 179);
+    background-position: 200px 800px;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    column-gap: 800px;
+    align-content: center;
+    text-align: center;
+    border-color: rgb(158, 158, 158);
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;
+}
+aside {
+    display: grid;
+    background-color: rgb(226, 226, 226);
+    float:right;
+    justify-content: center;
+    border-color: rgb(158, 158, 158);
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    
+}
+#Bigwrapper{
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(214, 214, 214);
+    height: 820px;
+    border-color: rgb(158, 158, 158);
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    grid-template-columns: repeat(6, 200px);
+    column-gap: 50px;
+}
+.item {
+    border-radius: 15px;
+}
+
+.img1{
+    border-radius: 15px;
+    position: absolute;
+}
+.img2{
+    position: absolute;
+    opacity: 0%;
+}
+#time {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+#nav {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+aside div {
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 100px);
+    justify-content: center;                        
+}
+aside div div {
+    height: 100px;
+    width: 100px;
+    margin-top: -60px;
+}
+aside div div img {
+    height: 100px;
+    width: 100px;
+}
+aside div h2 {
+    grid-column: 1/3;
+}
