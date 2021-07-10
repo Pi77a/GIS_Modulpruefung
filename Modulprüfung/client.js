@@ -17,7 +17,7 @@ var Modulprüfung;
             div.addEventListener("click", flipCard);
             document.getElementById("Bigwrapper").appendChild(div);
             let img1 = document.createElement("img");
-            img1.src = "data/memory.png";
+            img1.src = "https://imgur.com/rFI0q2H";
             img1.classList.add("img1");
             img1.id = img1.src;
             div.appendChild(img1);
