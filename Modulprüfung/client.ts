@@ -202,8 +202,8 @@ namespace Modulprüfung {
         }
         async function serverrequestsend2(): Promise<void> {
             let scorearray: string[] = [localStorage.getItem("time"), localStorage.getItem("username")];
-            //let url: string = "http://localhost:8100/send?" + "time=" + scorearray[0] + "&username=" + scorearray[1];
             let url: string = "https://grundlageninteraktivesysteme.herokuapp.com/send?" + "time=" + scorearray[0] + "&username=" + scorearray[1];
+            //let url: string = "http://localhost:8100/send?" + "time=" + scorearray[0] + "&username=" + scorearray[1];
             updateList(url);
         }
 

@@ -155,8 +155,8 @@ var Modulprüfung;
         }
         async function serverrequestsend2() {
             let scorearray = [localStorage.getItem("time"), localStorage.getItem("username")];
-            //let url: string = "http://localhost:8100/send?" + "time=" + scorearray[0] + "&username=" + scorearray[1];
             let url = "https://grundlageninteraktivesysteme.herokuapp.com/send?" + "time=" + scorearray[0] + "&username=" + scorearray[1];
+            //let url: string = "http://localhost:8100/send?" + "time=" + scorearray[0] + "&username=" + scorearray[1];
             updateList(url);
         }
         async function updateList(_url) {
