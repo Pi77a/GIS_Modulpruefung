@@ -2,7 +2,7 @@
 var Modulprüfung;
 (function (Modulprüfung) {
     console.log(document.location.pathname);
-    if (document.location.pathname == "https://pi77a.github.io/GIS_Modulpruefung/Modulpr%C3%BCfung/Spieloberflaeche.html") {
+    if (window.location.pathname == "/GIS_Modulpruefung/Modulpr%C3%BCfung/Spieloberflaeche.html") {
         let randNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
         let vergleich = [];
         let unsichtbar = [];
@@ -129,7 +129,7 @@ var Modulprüfung;
             }
         }, 1000);
     }
-    else if (window.location.pathname == "https://pi77a.github.io/GIS_Modulpruefung/Modulpr%C3%BCfung/Glueckwunsch.html") {
+    else if (window.location.pathname == "/GIS_Modulpruefung/Modulpr%C3%BCfung/Glueckwunsch.html") {
         let button = document.getElementById("score");
         button.addEventListener("click", scoreboard);
         function scoreboard(_clickEvent) {
@@ -139,7 +139,7 @@ var Modulprüfung;
             window.location.assign("./Scoreboardseite.html");
         }
     }
-    else if (window.location.pathname == "https://pi77a.github.io/GIS_Modulpruefung/Modulpr%C3%BCfung/Scoreboardseite.html") {
+    else if (window.location.pathname == "/GIS_Modulpruefung/Modulpr%C3%BCfung/Scoreboardseite.html") {
         if (localStorage.getItem("username") != null && localStorage.getItem("time") != null) {
             serverrequestsend();
         }

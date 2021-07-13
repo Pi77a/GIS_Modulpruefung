@@ -6,7 +6,7 @@ namespace Modulprüfung {
         time: string;
     }
 
-    if (document.location.pathname == "https://pi77a.github.io/GIS_Modulpruefung/Modulpr%C3%BCfung/Spieloberflaeche.html") {
+    if (window.location.pathname == "/GIS_Modulpruefung/Modulpr%C3%BCfung/Spieloberflaeche.html") {
         interface Image {
             id: string;
             imageURL: string;
@@ -165,7 +165,7 @@ namespace Modulprüfung {
                 window.location.assign("./Glueckwunsch.html");
             }
         },                                1000);
-    } else if (window.location.pathname == "https://pi77a.github.io/GIS_Modulpruefung/Modulpr%C3%BCfung/Glueckwunsch.html") {
+    } else if (window.location.pathname == "/GIS_Modulpruefung/Modulpr%C3%BCfung/Glueckwunsch.html") {
 
 
         let button: HTMLButtonElement = document.getElementById("score");
@@ -178,7 +178,7 @@ namespace Modulprüfung {
             window.location.assign("./Scoreboardseite.html");
         }
     }
-    else if (window.location.pathname == "https://pi77a.github.io/GIS_Modulpruefung/Modulpr%C3%BCfung/Scoreboardseite.html") {
+    else if (window.location.pathname == "/GIS_Modulpruefung/Modulpr%C3%BCfung/Scoreboardseite.html") {
 
         if (localStorage.getItem("username") != null && localStorage.getItem("time") != null) {
             serverrequestsend();
