@@ -6,7 +6,7 @@ namespace Modulprüfung {
         time: string;
     }
 
-    if (document.location.pathname == "/C:/Users/b2nar/OneDrive/Dokumente/GitHub/GIS_Modulpruefung/Modulpr%C3%BCfung/Spieloberflaeche.html") {
+    if (window.location.pathname== "./Spieloberflaeche.html") {
         interface Image {
             id: string;
             imageURL: string;
@@ -165,7 +165,7 @@ namespace Modulprüfung {
                 window.location.assign("./Glueckwunsch.html");
             }
         },                                1000);
-    } else if (window.location.pathname == "/C:/Users/b2nar/OneDrive/Dokumente/GitHub/GIS_Modulpruefung/Modulpr%C3%BCfung/Glueckwunsch.html") {
+    } else if (window.location.pathname== "./Glueckwunsch.html") {
 
 
         let button: HTMLButtonElement = document.getElementById("score");
@@ -178,7 +178,7 @@ namespace Modulprüfung {
             window.location.assign("./Scoreboardseite.html");
         }
     }
-    else if (window.location.pathname == "/C:/Users/b2nar/OneDrive/Dokumente/GitHub/GIS_Modulpruefung/Modulpr%C3%BCfung/Scoreboardseite.html") {
+    else if (pathname == "./Scoreboardseite.html") {
 
         if (localStorage.getItem("username") != null && localStorage.getItem("time") != null) {
             serverrequestsend();
